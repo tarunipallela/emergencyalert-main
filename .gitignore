@@ -1,22 +1,64 @@
+# =========================
+# ENV & SECRETS (IMPORTANT)
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
 # Logs
+# =========================
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Build outputs
+# =========================
+dist/
+dist-ssr/
+build/
+
+# =========================
+# Local config files
+# =========================
 *.local
 
-# Editor directories and files
+# =========================
+# Editor & OS files
+# =========================
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# Supabase temp files
+# =========================
+supabase/.temp
+
+# =========================
+# Testing
+# =========================
+coverage/
+
+# =========================
+# Misc
+# =========================
 *.suo
 *.ntvs*
 *.njsproj
